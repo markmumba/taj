@@ -1,28 +1,26 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>DURG Indudtry Template by Colorlib</title>
+    <title>Taj Movers Company</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
+    {% load static %}
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/slicknav.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/slicknav.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -39,7 +37,7 @@
                     <div class="row align-items-center">
                         <div class="col-xl-2 col-lg-2">
                             <div class="logo-img">
-                                <a href="index.html">
+                                <a href="{% url 'homepage' %} ">
                                     <!-- <img src="img/logo.png" alt=""> -->
                                     <h3 style="color: #ff5e13;">TAJ MOVERS</h3>
                                 </a>
@@ -49,24 +47,22 @@
                             <div class="main-menu d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a class="active" href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="service.html">Services</a></li>
-                                      <!--   <li><a href="project.html">Projects</a></li> -->
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a class="active" href="{% url 'homepage' %} ">Home</a></li>
+                                        <li><a href="{% url 'about' %} ">About</a></li>
+                                        <!-- <li><a href="{% url 'about' %} ">About</a></li>
+                                        <li><a href="{% url 'about' %} ">Projects</a></li> -->
+                                        <li><a href="{% url 'service' %} ">Services</a></li>
+                                        <li><a href="{% url 'contact' %} ">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-3">
                             <div class="quote-area">
-                                <!-- <div class="search-bar">
-                                    <a id="search_1" href="javascript:void(0)"><i class="fa fa-search"></i></a>
-                                </div> -->
                                 <div style="color:  #ff5e13;" class="Flaticon flaticon-right-arrow">                                    
                                 </div>
                                 <div class="get-quote d-none d-lg-block">
-                                    <a class="boxed-btn" href="contact.html">Get a quote</a>
+                                    <a class="boxed-btn" href="{% url 'contact' %} ">Get a quote</a>
                                 </div>
                             </div>
                         </div>
@@ -76,11 +72,7 @@
                     </div>
                     <div class="search_input" id="search_input_box">
                         <div class="container ">
-                            <form class="d-flex justify-content-between search-inner">
-                                <input type="text" class="form-control" id="search_input" placeholder="Search Here">
-                                <button type="submit" class="btn"></button>
-                                <span class="fa fa-close" id="close_search" title="Close Search"></span>
-                            </form>
+
                         </div>
                     </div>
                 </div>
@@ -97,7 +89,7 @@
                     <div class="breadcrumb_iner">
                         <div class="breadcrumb_iner_item">
                             <h2>Our Company</h2>
-                            <p> <a href="index.html">Home.</a> <span></span> About</p>
+                            <p> <a href="{% url 'homepage' %}">Home.</a> <span></span> About</p>
                         </div>
                     </div>
                 </div>
@@ -112,10 +104,8 @@
             <div class="row align-items-center">
                 <div class="col-xl-7 col-md-12 col-lg-6">
                     <div class="about-thumb">
-                        <img src="img/about/about.jpg" alt="">
-                        <a class="video-icon popup-video" href="https://www.youtube.com/watch?v=vb9uYBtqmeM">
-                            <i class="fa fa-play"></i>
-                        </a>
+                        <img src="{% static 'img/about/about.jpg' %} " alt="">
+                        
                     </div>
                 </div>
                 <div class="col-xl-5 col-md-12 col-lg-6">
@@ -141,7 +131,7 @@
                 <div class="col-xl-4 col-md-4">
                     <div class="single-counter">
                         <div class="icon">
-                            <img src="img/icon/conunter-icon.png" alt="">
+                            <img src="{% static 'img/icon/conunter-icon.png' %} " alt="">
                         </div>
                         <div class="counter-number">
                             <h3><span class="counter">400</span><span>+</span></h3>
@@ -152,7 +142,7 @@
                 <div class="col-xl-4 col-md-4">
                     <div class="single-counter">
                         <div class="icon">
-                            <img src="img/icon/conunter-icon2.png" alt="">
+                            <img src="{% static 'img/icon/conunter-icon2.png' %} " alt="">
                         </div>
                         <div class="counter-number">
                             <h3><span class="counter">30</span><span>+</span></h3>
@@ -163,7 +153,7 @@
                 <div class="col-xl-4 col-md-4">
                     <div class="single-counter">
                         <div class="icon">
-                            <img src="img/icon/conunter-icon3.png" alt="">
+                            <img src="{% static 'img/icon/conunter-icon3.png' %} " alt="">
                         </div>
                         <div class="counter-number">
                             <h3><span class="counter">350</span><span>+</span></h3>
@@ -176,23 +166,169 @@
     </div>
     <!-- counter-start -->
 
-    <!-- about start -->
-    <div class="about-area section-padding">
+    <!-- service-area-start -->
+    <div class="service-area">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-5 col-md-12 col-lg-6">
-                    <div class="section-title mb-65 p-0">
-                        <span>About Company</span>
-                        <h3>Deliver inovative
-                            Moving solutions</h3>
-                        <p class="para-text">
-                            With you every step of the way. Safety, integrity and loyalty are frameworks of our solution.
-                        </p>
+            <div class="row align-items-center justify-content-center">
+                <div class="section-title text-center mb-65">
+                    <span>OUR SERVICES</span>
+                    <h3>We provide all of your <br>
+                        Moving solutions</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-4">
+                    <div class="single-service">
+                        <div class="service-thumb">
+                            <img src="{% static 'img/service/3.jpg' %} " alt="">
+                        </div>
+                        <h3>Local, Timely Moves</h3>
+                        <p>We consider your choice of time to move, Upon request. However, Late night demands may increase cost</p>
+                        <!-- <a href="#" class="read-more">Read More</a> -->
                     </div>
                 </div>
-                <div class="col-xl-7 col-md-12 col-lg-6">
-                    <div class="about-thumb">
-                        <img src="img/about/1.jpg" alt="">
+                <div class="col-xl-4 col-md-4">
+                    <div class="single-service">
+                        <div class="service-thumb">
+                            <img src="{% static 'img/service/4.jpg' %} " alt="">
+                        </div>
+                        <h3>Office Moving </h3>
+                        <p>We relieve you the stress of Packaging, moving and settling down in your new Office. Move Gracefully with us.</p>
+                        <!-- <a href="#" class="read-more">Read More</a> -->
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single-service">
+                        <div class="service-thumb">
+                            <img src="{% static 'img/service/1.jpg' %} " alt="">
+                        </div>
+                        <h3>Long Distance Moving</h3>
+                        <p>We also cover long distance moving/vacating at a friendly cost. Get in touch to get a quote.</p>
+                        <!-- <a href="#" class="read-more">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service-area-end -->
+
+    <!-- about start -->
+    <div class="about-area">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="section-title text-center mb-65">
+                    <span>ABOUT   TAJ MOVERS</span>
+                    <h3>We move you, <br>
+                        Comfortably and Safely</h3>
+                </div>
+            </div>
+            <div class="about-pro-active owl-carousel">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-md-6 col-lg-6 ">
+                        <div class="about-info-text">
+                            <div class="quote">
+                                <i class="Flaticon flaticon-quote"></i>
+                            </div>
+                            <div class="about-ratting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p class="about-text">Make us a part of your move
+                                We will dedicate our team and efforts to making you comfortable.</p>
+                            <div class="about-author">
+                                <div class="autor-thumb">
+                                    <img src="img/about/about-author.jpg" alt="">
+                                </div>
+                                <div class="auhor-text">
+                                    <span>Japhey Omori</span>
+                                    <p>Business ownner</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 offset-xl-1 col-md-6">
+                        <div class="about-review">
+                            <img src="{% static 'img/about/about-project.jpg' %} " alt="">
+                            <div class="project-review">
+                                <h3>350+</h3>
+                                <p>Positive reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row  align-items-center">
+                    <div class="col-xl-6 col-md-6">
+                        <div class="about-info-text">
+                            <div class="quote">
+                                <i class="Flaticon flaticon-quote"></i>
+                            </div>
+                            <div class="about-ratting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p class="about-text">Make us a part of your move
+                                We will dedicate our team and efforts to making you comfortable.</p>
+                            <div class="about-author">
+                                <div class="autor-thumb">
+                                    <img src="img/about/about-author.jpg" alt="">
+                                </div>
+                                <div class="auhor-text">
+                                    <span>Japhey Omori</span>
+                                    <p>Business ownner</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 offset-xl-1 col-md-6">
+                        <div class="about-review">
+                            <img src="{% static 'img/about/about-project.jpg' %} " alt="">
+                            <div class="project-review">
+                                <h3>350+</h3>
+                                <p>Positive review</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-md-6">
+                        <div class="about-info-text">
+                            <div class="quote">
+                                <i class="Flaticon flaticon-quote"></i>
+                            </div>
+                            <div class="about-ratting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p class="about-text">Make us a part of your move
+                                We will dedicate our team and efforts to making you comfortable.</p>
+                            <div class="about-author">
+                                <div class="autor-thumb">
+                                    <img src="{% static 'img/about/about-author.jpg' %} " alt="">
+                                </div>
+                                <div class="auhor-text">
+                                    <span>Japhey Omori</span>
+                                    <p>Business ownner</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 offset-xl-1 col-md-6">
+                        <div class="about-review">
+                            <img src="{% static 'img/about/about-project.jpg' %} " alt="">
+                            <div class="project-review">
+                                <h3>350+</h3>
+                                <p>Positive review</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -200,115 +336,41 @@
     </div>
     <!-- about end -->
 
-    <!-- team-start -->
-    <div class="team-area section-padding gray-bg">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="section-title text-center mb-65">
-                    <span>OUR INDUSTRIAL EXPERTS</span>
-                    <h3>Meet with our Industrial experts</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="single-team">
-                        <div class="team-thumb">
-                            <img src="img/team/2.jpg" alt="">
-                            <div class="team-hover">
-                                <div class="team-link">
-                                    <ul>
-                                        <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-linkedin"></i> </a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-info text-center">
-                            <h3>Kamal Dowlat</h3>
-                            <p>Industrial engineer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="single-team">
-                        <div class="team-thumb">
-                            <img src="img/team/3.jpg" alt="">
-                            <div class="team-hover">
-                                <div class="team-link">
-                                    <ul>
-                                        <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-linkedin"></i> </a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-info text-center">
-                            <h3>Miller Jonson</h3>
-                            <p>Industrial engineer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="single-team">
-                        <div class="team-thumb">
-                            <img src="img/team/4.jpg" alt="">
-                            <div class="team-hover">
-                                <div class="team-link">
-                                    <ul>
-                                        <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-linkedin"></i> </a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-info text-center">
-                            <h3>Aristetol Smith</h3>
-                            <p>Industrial engineer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- team-end -->
-
-  <!-- location-area-start -->
+    <!-- location-area-start -->
     <div class="addres-area black-bg section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 col-md-4">
                     <div class="single-address text-center">
                         <div class="addres-icon">
-                            <img src="img/icon/1.png" alt="">
+                            <img src="{% static 'img/icon/1.png' %} " alt="">
                         </div>
                         <h3>Our Location</h3>
                         <p>Nairobi, Kenya<br>
-                            Mombasa Road</p>
-                        <!-- <a class="underline-hover" href="#">Get Direction</a> -->
+                           <span class="underline-hover"> Mombasa Road</span></p>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-4">
                     <div class="single-address text-center">
                         <div class="addres-icon">
-                            <img src="img/icon/2.png" alt="">
+                            <img src="{% static 'img/icon/2.png' %} " alt="">
                         </div>
                         <h3>Opening hour</h3>
                         <p>Mon-Fri (9.00-19.00) <br>
-                            Sat-Sun <a class="underline-hover" href="#">(Closed)</a></p>
+                            Sat-Sun <span class="underline-hover">(Closed)</span></p>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-4">
                     <div class="single-address text-center">
                         <div class="addres-icon">
-                            <img src="img/icon/3.png" alt="">
+                            <img src="{% static 'img/icon/3.png' %} " alt="">
                         </div>
                         <h3>Drop a message</h3>
-                        <p>japhethfriday@gmail.com <br>
-                            +254 722 9711</p>
-                        <a class="underline-hover" href="#">Mail Us</a>
+                        <p>
+                            +254 722 9711
+                            <br>
+                            <img width="20px" height="20px" src="{% static 'img/gmail.png' %} "> :<a style="text-decoration: none; color: #ff5e13;" href="mailto:japhethfriday@gmail.com?Subject=Hello%20again" target="_bottom"><span class="underline-hover">Mail Us </span></a>
+                        </p> 
                     </div>
                 </div>
             </div>
@@ -333,32 +395,31 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- footer-end -->
 
     <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins.js"></script>
+    <script rel="stylesheet/" src="{% static 'js/vendor/modernizr-3.5.0.min.js' %} "></script>
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %} "></script>
+    <script src="{% static 'js/popper.min.js' %} "></script>
+    <script src="{% static 'js/bootstrap.min.js' %} "></script>
+    <script src="{% static 'js/owl.carousel.min.js' %} "></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %} "></script>
+    <script src="{% static 'js/ajax-form.js' %} "></script>
+    <script src="{% static 'js/waypoints.min.js' %} "></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %} "></script>
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %} "></script>
+    <script src="{% static 'js/scrollIt.js' %} "></script>
+    <script src="{% static 'js/jquery.scrollUp.min.js' %} "></script>
+    <script src="{% static 'js/wow.min.js' %} "></script>
+    <script src="{% static 'js/nice-select.min.js' %} "></script>
+    <script src="{% static 'js/jquery.slicknav.min.js' %} "></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' % } "></script>
+    <script src="{% static 'js/plugins.js' %} "></script>
 
     <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
-
-    <script src="js/main.js"></script>
+    <script src="{% static 'js/contact.js' %} "></script>
+    <script src="{% static 'js/jquery.ajaxchimp.min.js' %} "></script>
+    <script src="{% static 'js/jquery.form.js' %} "></script>
+    <script src="{% static 'js/jquery.validate.min.js' %} "></script>
+    <script src="{% static 'js/mail-script.js' %} "></script>
+    <script src="{% static 'js/main.js' %} "></script>
 
 </body>
 
