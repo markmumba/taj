@@ -21,15 +21,16 @@
     <link rel="stylesheet" href="{% static 'css/animate.css' %} ">
     <link rel="stylesheet" href="{% static 'css/slicknav.css' %} ">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <!-- <style>
+       
+    
+    </style> -->
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
-    <!-- header-start -->
+    <!-- header starts -->
     <header>
         <div class="header-area">
             <div id="sticky-header" class="main-header-area white-bg">
@@ -81,145 +82,32 @@
     </header>
     <!-- header-end -->
 
+
     <!-- breadcrumb-start -->
-    <section class="breadcrumb breadcrumb_bg banner-bg-1 overlay2 ptb200">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 offset-lg-1">
-                    <div class="breadcrumb_iner">
-                        <div class="breadcrumb_iner_item">
-                            <h2>Our Company</h2>
-                            <p> <a href="{% url 'homepage' %}">Home.</a> <span></span> About</p>
+    <section class="img-fluid background-set">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 offset-lg-1">
+                        <div class="breadcrumb_iner">
+                            <div class="breadcrumb_iner_item">
+                                <h2>Our Company</h2>
+                                <p> <a href="{% url 'homepage' %}">Home.</a> <span></span> About</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- breadcrumb-end -->
+        </section>
+        <!-- breadcrumb-end -->
 
-    <!-- about start -->
-    <div class="about-area section-padding">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-7 col-md-12 col-lg-6">
-                    <div class="about-thumb">
-                        <img src="{% static 'img/about/about.jpg' %} " alt="">
-                        
-                    </div>
-                </div>
-                <div class="col-xl-5 col-md-12 col-lg-6">
-                    <div class="section-title mb-65">
-                        <span>About Company</span>
-                        <h3>Deliver inovative
-                            Moving solutions</h3>
-                        <p class="para-text">
-                            With you every step of the way. Safety, integrity and loyalty are frameworks of our solution.
-                        </p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- about end -->
 
-    <!-- counter-start -->
-    <div class="counter-area gray-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4 col-md-4">
-                    <div class="single-counter">
-                        <div class="icon">
-                            <img src="{% static 'img/icon/conunter-icon.png' %} " alt="">
-                        </div>
-                        <div class="counter-number">
-                            <h3><span class="counter">400</span><span>+</span></h3>
-                            <p>Business <span>Completed</span> </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single-counter">
-                        <div class="icon">
-                            <img src="{% static 'img/icon/conunter-icon2.png' %} " alt="">
-                        </div>
-                        <div class="counter-number">
-                            <h3><span class="counter">30</span><span>+</span></h3>
-                            <p><span>Dedicated team</span> Business</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single-counter">
-                        <div class="icon">
-                            <img src="{% static 'img/icon/conunter-icon3.png' %} " alt="">
-                        </div>
-                        <div class="counter-number">
-                            <h3><span class="counter">350</span><span>+</span></h3>
-                            <p>Positive <span>review</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- counter-start -->
-
-    <!-- service-area-start -->
-    <div class="service-area">
+   <!-- about start -->
+   <div class="about-area">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="section-title text-center mb-65">
-                    <span>OUR SERVICES</span>
-                    <h3>We provide all of your <br>
-                        Moving solutions</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-md-4">
-                    <div class="single-service">
-                        <div class="service-thumb">
-                            <img src="{% static 'img/service/3.jpg' %} " alt="">
-                        </div>
-                        <h3>Local, Timely Moves</h3>
-                        <p>We consider your choice of time to move, Upon request. However, Late night demands may increase cost</p>
-                        <!-- <a href="#" class="read-more">Read More</a> -->
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single-service">
-                        <div class="service-thumb">
-                            <img src="{% static 'img/service/4.jpg' %} " alt="">
-                        </div>
-                        <h3>Office Moving </h3>
-                        <p>We relieve you the stress of Packaging, moving and settling down in your new Office. Move Gracefully with us.</p>
-                        <!-- <a href="#" class="read-more">Read More</a> -->
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single-service">
-                        <div class="service-thumb">
-                            <img src="{% static 'img/service/1.jpg' %} " alt="">
-                        </div>
-                        <h3>Long Distance Moving</h3>
-                        <p>We also cover long distance moving/vacating at a friendly cost. Get in touch to get a quote.</p>
-                        <!-- <a href="#" class="read-more">Read More</a> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- service-area-end -->
-
-    <!-- about start -->
-    <div class="about-area">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="section-title text-center mb-65">
-                    <span>ABOUT   TAJ MOVERS</span>
-                    <h3>We move you, <br>
-                        Comfortably and Safely</h3>
+                    <span>taj Movers Dedication</span>
+                    <h3> Satisfaction gauge </h3>
                 </div>
             </div>
             <div class="about-pro-active owl-carousel">
@@ -335,6 +223,50 @@
         </div>
     </div>
     <!-- about end -->
+
+
+    <!-- counter-start -->
+    <div class="counter-area gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-md-4">
+                    <div class="single-counter">
+                        <div class="icon">
+                            <img src="{% static 'img/icon/conunter-icon.png' %} " alt="">
+                        </div>
+                        <div class="counter-number">
+                            <h3><span class="counter">400</span><span>+</span></h3>
+                            <p>Business <span>Completed</span> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single-counter">
+                        <div class="icon">
+                            <img src="{% static 'img/icon/conunter-icon2.png' %} " alt="">
+                        </div>
+                        <div class="counter-number">
+                            <h3><span class="counter">30</span><span>+</span></h3>
+                            <p><span>Dedicated team</span> Business</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single-counter">
+                        <div class="icon">
+                            <img src="{% static 'img/icon/conunter-icon3.png' %} " alt="">
+                        </div>
+                        <div class="counter-number">
+                            <h3><span class="counter">350</span><span>+</span></h3>
+                            <p>Positive <span>review</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- counter-start -->
+
 
     <!-- location-area-start -->
     <div class="addres-area black-bg section-padding">

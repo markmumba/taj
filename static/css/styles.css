@@ -1,0 +1,9 @@
+.background-set{
+    background-image: url(../img/banner/details-banner.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}

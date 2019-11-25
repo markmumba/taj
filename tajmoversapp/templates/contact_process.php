@@ -34,3 +34,26 @@
     $send = mail($to, $subject, $body, $headers);
 
 ?>
+
+<pre class="brush:php">
+          		$to = 'jmunyiwamwangi@gmail.com'; // replace this mail with yours
+          		$firstname = $_POST["fname"];
+          		$email= $_POST["email"];
+          		$headers = 'MIME-Version: 1.0' . "\r\n";
+          		$headers .= "From: " . $email . "\r\n"; // Sender's E-mail
+          		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+          		$message ='<table style="width:100%">
+          			<tr>
+          				<td>'.$firstname.'  '.$laststname.'</td>
+          			</tr>
+          			<tr><td>Email: '.$email.'</td></tr>
+          		</table>';
+
+          		if (@mail($to, $email, $message, $headers))
+          		{
+          			echo 'Your message has been sent.';
+          		}else{
+          		echo 'failed';
+			  }
+			  
