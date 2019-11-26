@@ -2,8 +2,8 @@ from django.db import models
 
 # Create your models here.
 class Usermails(models.Model):
-    subject= models.TextField(null=False)
-    message =  models.CharField( max_length=20)
+    subject= models.CharField(max_length=20)
+    message =  models.TextField( null=False)
     from_email = models.EmailField(null=False)
     destinations = models.CharField(null=True, max_length=20)
 

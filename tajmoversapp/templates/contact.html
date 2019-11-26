@@ -31,32 +31,33 @@
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 <style>
-        #id_description{
+        #id_subject{
            
-           height: 60px;
-           border-color: #ff5e13;
-           width: 300px;
+           
+           
+           
            border-radius: 10px;
-           text-align-last: center;
+          
        }
-       #id_username{
+       #id_message{
            
            height: 50px;
-           border-color: #ff5e13;
+           border-color:rgb(182, 182, 182);
            border-radius:10px;
-           text-align-last: center;
+           height: 200px;
+           
        }
-       #id_useremail{
+       #id_from_email{
            
            height: 50px;
-           border-color: #ff5e13;
+           
            border-radius: 10px;
-           text-align-last: center;
+           
        }
        #id_destinations{
         height: 100px;
-        border-color: #ff5e13;
-        border-radius: 10px;
+        
+        border-radius: 25px;
     }
     </style>
 <body>
@@ -114,19 +115,19 @@
     
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="contact-title text-center">Send us a message</h2>
+                        <h2 class="contact-title text-center" style="padding-right: 400px;;">Send us a message</h2>
                     </div>
                     <div class="col-lg-8">
-                            <div class="col-sm-9 animated fadeInUp delay-1s" style=" padding-left:250px; padding-top: 50px;">
+                            <div class="col-sm-9 animated" style=" padding-left:250px; padding-top: 50px;">
                                     <div class="card"
-                                    style="width: 1000px;border-radius: 10px; box-shadow: 0 40px 15px 0 rgba(0, 0, 0, 0.2); height: 600px; font-weight: 600; border-color: #ff5e13; ">
+                                    style="width: 1000px;border-radius: 25px; height: 700px; font-weight: 600; border-color: #ff5e13; ">
                                     <div class="card-body" style="padding-top: 90px;">
                                         <form action="{% url 'contact'%}" method="post" enctype="multipart/form-data"
                                         style="height: 50px;">
                     
-                                        {% csrf_token %}
-                                        {{ form.as_p }}
-                    
+                                        {% csrf_token%}
+                                        {% bootstrap_form form %}
+            
                     
                                         <div class="form-group text-center">
                                             <input type="submit" class="btn btn-primary sign-up-button" value="Send">

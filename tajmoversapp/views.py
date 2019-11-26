@@ -11,6 +11,7 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.template import RequestContext
 from django.urls import reverse, reverse_lazy
 
+
 from .forms import ContactForm
 
 # Create your views here.
@@ -35,7 +36,7 @@ def contact(request):
             message = form.cleaned_data['message']
             from_email = form.cleaned_data['from_email']
             try:
-                send_mail(subject, message,from_email, ['jmunyiwamwangi@gmail.com'])
+                send_mail(subject, message,from_email,)
             except BadHeaderError:
                 return HttpResponse('Please input correct details as directed')
             return redirect('success')
