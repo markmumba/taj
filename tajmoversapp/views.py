@@ -36,7 +36,7 @@ def contact(request):
             message = form.cleaned_data['message']
             from_email = form.cleaned_data['from_email']
             try:
-                send_mail(subject, message,from_email,)
+                send_mail(subject, message,from_email, ['markmumba01@gmail.com'])
             except BadHeaderError:
                 return HttpResponse('Please input correct details as directed')
             return redirect('success')
@@ -53,7 +53,7 @@ def emailView(request):
             from_email = form.cleaned_data['from_email']
             subject = form.cleaned_data['subject']
             try:
-                send_mail(description, user_name,subject, from_email ['jmunyiwamwangi@gmail.com'])
+                send_mail(description, user_name,subject, from_email, ['markmumba01@gmail.com'])
             except BadHeaderError:
                 return HttpResponse('Please input correct details as directed')
             return redirect('success')

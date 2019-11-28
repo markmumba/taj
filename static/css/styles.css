@@ -7,3 +7,14 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
+h2 a img{ 
+    display: inline-block;
+    -webkit-transition: all 0.1s ease-out;
+}
+h2 a img:hover {
+    -webkit-transform: scale(2.0);
+    color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    cursor: pointer;
+}
